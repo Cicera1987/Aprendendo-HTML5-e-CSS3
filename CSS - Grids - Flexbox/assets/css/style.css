@@ -1,0 +1,65 @@
+body, ul, li, p{
+    margin: 0;
+    padding: 0;
+    list-style: none;               /*Tira as bolinhas e as listas do menu*/
+    font: size 1.2em;
+    font-family: arial;
+}
+
+a{
+    text-decoration: none;          /**/
+    color: white;                 /*cor do texto no menu*/
+
+}
+
+h1{
+    text-align: center;
+    margin-top: 100px;
+}
+
+img{
+    width: 600px;                    /*altura da imagem*/
+    height: 300px;                   /*largura da imagem*/
+    max-width: 100%;
+    display: block;
+}
+
+                /*Cabeçalio*/
+.header{
+    background: #1d1e20;
+    display: flex;                  /*deixa a logo de um lado e o menu do outro*/
+    flex-wrap: wrap;                /*quanto a tela estiver responviva a logo(marca) fica em cima e o menu embaixo*/
+    justify-content: space-between; /*cria espaço entre os itens menu e logo*/
+    align-items: center;            /*deixa a logo no centro*/
+    padding: 20px;                  /* dá espaço entre os itens*/
+}
+
+                /*Menu*/
+.menu{
+    display: flex;
+}
+
+.menu li{
+    margin-left: 10px;              /*margens entre os itens do menu*/
+}
+
+.menu li a{
+    display: block;                 /*cria uma area de trabalho entre cada menu (sobre/produto /conta)*/
+    padding: 10px;
+}
+
+/*CSS FLEXBOX 1*/
+
+.flex{
+    display: flex;                  /*colocando os itens imagens um do lado do outro*/
+    flex-wrap: wrap;                /*quebrando linha*/
+    max-width: 800px;               /*trabalhando a largura do contaener*/
+    margin: 0 auto;
+}
+
+.flex > div{
+    flex: 1 1 200px;                 /*deixando os iens com 200px*/
+    margin:10px;
+}
+
+/*CSS GRID 1*/
